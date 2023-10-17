@@ -81,3 +81,16 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+.highlighted {
+  background-color: rgb(153, 0, 255);
+  color: white; 
+}
+.correct {
+  background-color: rgb(0, 255, 0);
+  color: white; 
+}
+.wrong {
+  background-color: rgb(255, 0, 0);
+  color: white; 
+}
