@@ -80,7 +80,7 @@ const generateAnswers = function () {
   questionElmt.textContent = asking;
   console.log(answer);
 };
-// intitiate game
+// intitiate game and reset to default
 const initgame = function () {
   playerScore = 0;
   Qnum = 0;
@@ -92,7 +92,7 @@ const initgame = function () {
   submitBTn.disabled = false;
   document.body.classList.remove("winner");
 };
-
+// check if answer is correct and update score
 const checkAnswer = function () {
   if (answerkey === playersChoice) {
     document.querySelector(buttonSelectors[answerkey]).classList.add("correct");
@@ -102,6 +102,7 @@ const checkAnswer = function () {
     document.querySelector(buttonSelectors[answerkey]).classList.add("wrong");
   }
 };
+// remove all CSS after selecting buttons and submitting
 function removeHighlight() {
   if (buttons) {
     buttons.forEach((button) => {
